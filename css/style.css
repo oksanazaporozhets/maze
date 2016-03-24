@@ -1,0 +1,32 @@
+#maze{
+	margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.row-with-cells {
+	height: 30px;
+}
+
+.row-with-cells div{
+	width: 30px;
+	height:30px;
+	display: inline-block;
+	border: 1px solid #777;
+	text-align: center;
+}
+
+.way{
+	background: #009a00;
+}
+
+.finish{
+	background: #FE151B!important;
+}
+
+.start{
+	background: #76E8ED!important;
+}
+
+.wall{
+	background: #333;
+}
