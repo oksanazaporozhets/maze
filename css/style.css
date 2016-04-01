@@ -3,13 +3,17 @@
     margin-bottom: 10px;
 }
 
+#maze p{
+	way-lenght-label
+}
+
 .row-with-cells {
-	height: 30px;
+	height: 25px;
 }
 
 .row-with-cells div{
-	width: 30px;
-	height:30px;
+	width: 25px;
+	height:25px;
 	display: inline-block;
 	border: 1px solid #777;
 	text-align: center;
@@ -29,4 +33,18 @@
 
 .wall{
 	background: #333;
+}
+
+#input-maze-block .input-group {
+	 width: 70%;
+	 margin-bottom: 7px;
+ }
+
+#input-maze-block h4{
+	font-size: 16px;
+	line-height: 21px;
+}
+
+#searchBtn{
+	display: none;
 }
