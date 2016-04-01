@@ -1,0 +1,50 @@
+#maze{
+	margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#maze p{
+	way-lenght-label
+}
+
+.row-with-cells {
+	height: 25px;
+}
+
+.row-with-cells div{
+	width: 25px;
+	height:25px;
+	display: inline-block;
+	border: 1px solid #777;
+	text-align: center;
+}
+
+.way{
+	background: #009a00;
+}
+
+.finish{
+	background: #FE151B!important;
+}
+
+.start{
+	background: #76E8ED!important;
+}
+
+.wall{
+	background: #333;
+}
+
+#input-maze-block .input-group {
+	 width: 70%;
+	 margin-bottom: 7px;
+ }
+
+#input-maze-block h4{
+	font-size: 16px;
+	line-height: 21px;
+}
+
+#searchBtn{
+	display: none;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Oksana Zaporozhets">
+  <title>Maze</title>
+
+  <!-- libs for testing -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+  <script>
+    mocha.setup('bdd');
+  </script>
+  <script>
+    var assert = chai.assert;
+  </script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script defer src="js/view.js"></script>
+  <script defer src="js/maze.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <div class="masthead">
+    <h3 class="text-muted">Maze path finder</h3>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+      <h3>Load example maze</h3>
+      <button type="button" id="loadMaze1" class="btn btn-success">Load maze 1 (15*15 cells) </button>
+      <button type="button" id="loadMaze2" class="btn btn-success">Load maze 2 (5*5 cells) </button>
+      <h3>or</h3>
+      <h3>Input data for maze</h3>
+      <div id="input-maze-block">
+        <label for="maze-size-input">Size - numbers of cells in each column and row </label>
+        <div class="input-group">
+          <span class="input-group-addon">Size</span>
+          <input type="text" class="form-control" id="maze-size-input">
+        </div>
+        <label for="maze-start-x-input">Coordinates of start and finish points</label>
+        <div class="input-group">
+          <span class="input-group-addon">Start X</span>
+          <input type="text" class="form-control" id="maze-start-x-input">
+          <span class="input-group-addon">Start Y</span>
+          <input type="text" class="form-control" id="maze-start-y-input">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon">Finish X</span>
+          <input type="text" class="form-control" id="maze-finish-x-input">
+          <span class="input-group-addon">Finish Y</span>
+          <input type="text" class="form-control" id="maze-finish-y-input">
+        </div>
+        <button id="initiateMaze" class="btn btn-primary">Render maze</button>
+        <button id="clear-walls-btn" class="btn btn-default">Clear walls</button>
+        <p></p>
+        <h4>For adding the wall just click on cell</h4>
+        <h4>For applying new parameters after some coordinates/size changes render maze again. </h4>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+      <div id="maze"></div>
+      <p id="way-lenght-label"></p>
+      <button type="button" id="searchBtn" class="btn btn-success">Search shortest way </button>
+    </div>
+  </div>
+
+</div>
+
+</body>
+
+</html>
